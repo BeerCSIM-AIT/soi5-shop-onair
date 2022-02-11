@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  serviceUrl: "http://localhost:4000"
+//   serviceUrl: "http://localhost:4000",
+  serviceUrl: "https://mongoose-authen-beeris.herokuapp.com"
 };
 
 /*
