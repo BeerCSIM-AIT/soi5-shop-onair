@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
                 this.tokenStorage.saveToken(res.token);
                 this.tokenStorage.saveUser(res.userCredentials);
                 this.isLoggedIn = true;
-                window.location.reload();
+                this.reload();
             },
                 err => {
                     this.errMessage = err.error.msg;
@@ -50,6 +50,10 @@ export class LoginComponent implements OnInit {
                     console.log(this.errMessage);
                 }
             );
+    }
+
+    reload(){
+        window.location.reload();
     }
 
 }
